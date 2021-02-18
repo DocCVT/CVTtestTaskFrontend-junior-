@@ -6,19 +6,34 @@ var tab_1 = document.getElementById("tab1");
 var tab_2 = document.getElementById("tab2");
 var btn_login = document.getElementById("btn_login");
 var btn_unlog = document.getElementById("authorized");
+var username = document.getElementById("username");
+
+tab1.style.color="#E5261E";
+tab1.style.borderBottom = "2px solid red";
+tab_1.style.display = 'block';
+
+let loc = username.value;
+loc = "Константин К.";
 
 btn_login.onclick=function()
 {
-	let log_in = document.getElementById("log_in").value;
-	let pass_word = document.getElementById("pass_word").value;
-	if (log_in == "kostya" && pass_word == "pass")
+	let log_in = document.getElementById("log_in");
+	let pass_word = document.getElementById("pass_word");
+	if (!log_in.value)
+	{
+		log_in.placeholder = "Заполните поле";
+	}
+	if (!pass_word.value)
+	{
+		pass_word.placeholder = "Заполните поле";
+	}
+	if (log_in.value && pass_word.value)
 	{
 		modal.style.display = "none";
 		btn.style.display = 'none';
+		username.value = loc;
 		btn_unlog.style.display = 'flex';
 	}
-	else
-		alert("No")
 }
 
 tab1.onclick=function()
