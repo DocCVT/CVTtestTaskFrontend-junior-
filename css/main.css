@@ -81,11 +81,19 @@ body
 .authorized
 {
 	align-items: center;
-	max-width: 182px;
+	/* max-width: 182px; */
 	margin-right: 0px;
 	right: 0;
 	position: absolute;
 	display: none;
+}
+.username
+{
+	border: 0;
+	color: #333333;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
 }
 .authorized a
 {
