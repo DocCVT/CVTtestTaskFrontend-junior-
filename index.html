@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
 	<link rel="stylesheet" href="css/simplebar.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 	<div class="header">
 		<a href="#" class="logo">
@@ -17,7 +19,8 @@
 		<input type="" placeholder="Поиск..." class="input_search"><a href="#" class="serc">Найти</a>
 		<a id="login" class="login">Войти</a>
 		<div class="authorized" id="authorized">
-			<p>Константин К.</p>
+			<input type="text" class="username" id="username" size="10" maxlength="50" onkeydown="size=value.length||10"
+				onkeyup="onkeydown()" onkeypress="onkeydown()" onchange="onkeydown()">
 			<a href="">Выйти</a>
 		</div>
 	</div>
@@ -31,31 +34,46 @@
 			<div id="tab1" class="tab_block">
 				&#128293; Новинки<br> <br>
 				<div class="movie">
-				<div style="background: url(img/cat.svg)">
-					<p>Описание1</p>
+					<div style="background: url(img/cat.svg)">
+						<p>Описание1</p>
+					</div>
+					<div style="background: url(img/batman.svg);">
+						<p>Описание2</p>
+					</div>
+					<div style="background: url(img/hollywood.svg);">
+						<p>Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его
+							«золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место
+							в стремительно меняющемся мире киноиндустрии.</p>
+					</div>
+					<div style="background: url(img/girl.svg);">
+						<p>Описание4</p>
+					</div>
 				</div>
-				<div style="background: url(img/batman.svg);">
-					<p>Описание2</p>
+				<div class="opisanie">
+					<div>Мульт в кино. Выпуск №103. Некогда грустить!</div>
+					<div>Новый Бэтмен</div>
+					<div>Однажды... в Голливуде</div>
+					<div>Стриптизёрши</div>
 				</div>
-				<div style="background: url(img/hollywood.svg);"><p>Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</p>					
-				</div>
-				<div style="background: url(img/girl.svg);">
-					<p>Описание4</p>
-				</div>
-			</div>
-				 <div class="opisanie">
-				 	<div>Мульт в кино. Выпуск №103. Некогда грустить!</div>
-				 	<div>Новый Бэтмен</div>
-				 	<div>Однажды... в Голливуде</div>
-				 	<div>Стриптизёрши</div>
-				 </div>
 				Жанры<br><br>
 				<div class="genre">
-					<div style="background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);"><img src="img/smile.svg" class="comedy"><p>Комедии</p></div>
-					<div style="background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);"><img src="img/smile2.svg" class="comedy"><p>Драмы</p></div>
-					<div style="background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);"><img src="img/smile3.svg" class="comedy"><p>Фантастика</p></div>
-					<div style="background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);"><img src="img/smile4.svg" class="comedy"><p>Ужасы</p></div>
-				</div>			 	
+					<div style="background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%);"><img
+							src="img/smile.svg" class="comedy">
+						<p>Комедии</p>
+					</div>
+					<div style="background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%);"><img
+							src="img/smile2.svg" class="comedy">
+						<p>Драмы</p>
+					</div>
+					<div style="background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%);"><img
+							src="img/smile3.svg" class="comedy">
+						<p>Фантастика</p>
+					</div>
+					<div style="background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%);"><img
+							src="img/smile4.svg" class="comedy">
+						<p>Ужасы</p>
+					</div>
+				</div>
 			</div>
 			<div id="tab2" class="tab_block">
 				<div class="chanels" data-simplebar>
@@ -64,9 +82,18 @@
 						<div class="chanel_info">
 							<span>Первый канал</span>
 							<table class="chanel_time">
-								<tr class="tr"><th>13:00</th><th>Новости (с субтитрами)</th></tr>
-								<tr><th>14:00</th><th>Давай поженимся</th></tr>
-								<tr><th>15:00</th><th>Другие новости</th></tr>
+								<tr class="tr">
+									<th>13:00</th>
+									<th>Новости (с субтитрами)</th>
+								</tr>
+								<tr>
+									<th>14:00</th>
+									<th>Давай поженимся</th>
+								</tr>
+								<tr>
+									<th>15:00</th>
+									<th>Другие новости</th>
+								</tr>
 							</table>
 						</div>
 					</div>
@@ -75,9 +102,18 @@
 						<div class="chanel_info">
 							<span>2x2</span>
 							<table class="chanel_time">
-								<tr><th>13:00</th><th>МУЛЬТ ТВ. Сезон 4, 7 серия</th></tr>
-								<tr><th>14:00</th><th>ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</th></tr>
-								<tr><th>15:00</th><th>БУРДАШЕВ. Сезон 1, 20 серия</th></tr>
+								<tr>
+									<th>13:00</th>
+									<th>МУЛЬТ ТВ. Сезон 4, 7 серия</th>
+								</tr>
+								<tr>
+									<th>14:00</th>
+									<th>ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</th>
+								</tr>
+								<tr>
+									<th>15:00</th>
+									<th>БУРДАШЕВ. Сезон 1, 20 серия</th>
+								</tr>
 							</table>
 						</div>
 					</div>
@@ -86,9 +122,18 @@
 						<div class="chanel_info">
 							<span>РБК</span>
 							<table class="chanel_time">
-								<tr><th>13:00</th><th>ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</th></tr>
-								<tr><th>14:00</th><th>Давай поженимся</th></tr>
-								<tr><th>15:00</th><th>Другие новости</th></tr>
+								<tr>
+									<th>13:00</th>
+									<th>ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</th>
+								</tr>
+								<tr>
+									<th>14:00</th>
+									<th>Давай поженимся</th>
+								</tr>
+								<tr>
+									<th>15:00</th>
+									<th>Другие новости</th>
+								</tr>
 							</table>
 						</div>
 					</div>
@@ -97,9 +142,18 @@
 						<div class="chanel_info">
 							<span>AMEDIA PREMIUM</span>
 							<table class="chanel_time">
-								<tr><th>13:00</th><th>Новости (с субтитрами)</th></tr>
-								<tr><th>14:00</th><th>Давай поженимся</th></tr>
-								<tr><th>15:00</th><th>Другие новости</th></tr>
+								<tr>
+									<th>13:00</th>
+									<th>Новости (с субтитрами)</th>
+								</tr>
+								<tr>
+									<th>14:00</th>
+									<th>Давай поженимся</th>
+								</tr>
+								<tr>
+									<th>15:00</th>
+									<th>Другие новости</th>
+								</tr>
 							</table>
 						</div>
 					</div>
@@ -120,18 +174,19 @@
 			</div>
 		</div>
 	</div>
-<div id="dark" class="dark">
-	<div class="auth">
-		<span class="vxod">Вход</span><br>
-		<form class="for">
-			<input type="text" placeholder="Логин" class="pass" id="log_in"><br>
-			<input type="password" placeholder="Пароль" class="pass" id="pass_word"><br>
-			<input type="checkbox" name="" value="remember" class="check">Запомнить
-		</form>
+	<div id="dark" class="dark">
+		<div class="auth">
+			<span class="vxod">Вход</span><br>
+			<form class="for">
+				<input type="text" placeholder="Логин" class="pass" id="log_in"><br>
+				<input type="password" placeholder="Пароль" class="pass" id="pass_word"><br>
+				<input type="checkbox" name="" value="remember" class="check">Запомнить
+			</form>
 			<button class="close" id="btn_login">Войти</button>
+		</div>
 	</div>
-</div>
-<script src="js/modal.js"></script>
-<script src="js/simplebar.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/simplebar.js"></script>
 </body>
+
 </html>
