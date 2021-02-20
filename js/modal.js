@@ -12,9 +12,16 @@ tab1.style.color="#E5261E";
 tab1.style.borderBottom = "2px solid red";
 tab_1.style.display = 'block';
 
-let loc = username.value;
-loc = "Константин К.";
-
+if (!localStorage.getItem("loc"))
+{
+	localStorage.setItem("loc", "Константин К.");
+}
+username.oninput=function()
+{
+	localStorage.setItem("loc", username.value);
+	loc = localStorage.getItem("loc");
+}
+// localStorage.removeItem("loc");
 btn_login.onclick=function()
 {
 	let log_in = document.getElementById("log_in");
@@ -31,7 +38,7 @@ btn_login.onclick=function()
 	{
 		modal.style.display = "none";
 		btn.style.display = 'none';
-		username.value = loc;
+		username.value = localStorage.getItem("loc");
 		btn_unlog.style.display = 'flex';
 	}
 }
