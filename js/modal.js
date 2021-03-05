@@ -25,6 +25,7 @@ username.oninput=function()
 
 btn_login.onclick=function()
 {
+	document.body.style.overflowY = 'scroll';
 	let log_in = document.getElementById("log_in");
 	let pass_word = document.getElementById("pass_word");
 	if (!log_in.value)
@@ -63,13 +64,6 @@ tab2.onclick=function()
 	tab_2.style.display = 'block';
 }
 
-btn.onclick=function()
-{
-	modal.style.display = "block";
-	modal.style.position = 'absolute';
-	document.body.style.overflowY = 'hidden';
-}
-
 function closeModal(event)
 {
 	if (event.target == modal) 
@@ -79,4 +73,14 @@ function closeModal(event)
 	}
 }
 
-window.addEventListener("click", closeModal);
+btn.onclick=function()
+{
+	modal.style.display = "block";
+	modal.style.position = 'absolute';
+	document.body.style.overflowY = 'hidden';
+	window.addEventListener("click", closeModal);
+}
+
+
+
+// window.addEventListener("click", closeModal);
