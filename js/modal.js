@@ -80,5 +80,3 @@ function closeModal(event)
 }
 
 window.addEventListener("click", closeModal);
-
-// window.addEventListener("click", closeModal);
