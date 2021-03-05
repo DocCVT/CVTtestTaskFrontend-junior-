@@ -22,6 +22,7 @@ username.oninput=function()
 	loc = localStorage.getItem("loc");
 }
 // localStorage.removeItem("loc");
+
 btn_login.onclick=function()
 {
 	let log_in = document.getElementById("log_in");
@@ -69,11 +70,14 @@ btn.onclick=function()
 	document.body.style.overflowY = 'hidden';
 }
 
-window.onclick=function(event)
+
+window.addEventListener("click", function closeModal(event)
 {
 	if (event.target == modal) 
 	{
 		modal.style.display = "none";
 		document.body.style.overflowY = 'scroll';
 	}
-}
+});
+
+// window.addEventListener("click", closeModal);
