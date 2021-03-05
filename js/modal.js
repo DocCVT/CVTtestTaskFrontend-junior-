@@ -70,14 +70,15 @@ btn.onclick=function()
 	document.body.style.overflowY = 'hidden';
 }
 
-
-window.addEventListener("click", function closeModal(event)
+function closeModal(event)
 {
 	if (event.target == modal) 
 	{
 		modal.style.display = "none";
 		document.body.style.overflowY = 'scroll';
 	}
-});
+}
+
+window.addEventListener("click", closeModal);
 
 // window.addEventListener("click", closeModal);
